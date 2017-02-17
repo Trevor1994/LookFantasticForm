@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Checkout Form</title>
+</head>
+<body>
+  <header><h1>Look Fantastic</h1></header>
+
+  <fieldset>
+  <legend><span class="number">1</span>Your Delivery Details</legend>
+  <form action="form.html" method="post">
+    <!-- Personal Details -->
+    <label for="title">title:</label>
+    <input type="text" id="title" name="title">
+    <label for="firstname">Firstname:</label>
+    <input type="text" id="first_name" name="first_name">
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname">
+    <label for="contact">Email Address:</label>
+    <input type="email" id="email" name="email">
+    <label for="contact">Primary contact number:</label>
+    <input type="tel" id="contactinfo" name="contactinfo">
+  </fieldset>
+  <!-- Address Details -->
+  <fieldset>
+    <p><b>Address</b></p>
+    <label for="countries" accesskey="c">Country</label>
+    <select name="province" id="province">
+	    <option>UK
+	    <option>America
+    </select>
+    <label for="postcode">Postcode:</label>
+    <input type="text" id="postcode" name="postcode">
+    <button type="button">Find Address</button>
+    <p>Or Enter Manually?</p>
+    <label for="house_no">House No:</label>
+    <input type="number" id="house_no" name="house_no">
+    <label for="Address1">Address 1:</label>
+    <input type="text" id="Address1" name="Address1">
+    <label for="Address2">Address 2:</label>
+    <input type="text" id="Address2" name="Address2">
+    <label for="city">Town/City:</label>
+    <input type="text" id="city" name="city">
+    <button type="button">Continue</button>
+  </fieldset>
+  </form>
+
+</body>
+</html>
