@@ -1,9 +1,13 @@
 body {
-  font: 100% sans-serif;
+  font: 100% verdana;
   color: #b61b1b; }
 
 fieldset {
   margin-bottom: 30px;
   border: none; }
+
+h1 {
+  font-family: Roboto, verdana;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
