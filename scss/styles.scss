@@ -1,0 +1,24 @@
+$font-stack: verdana;
+$primary-color: #b61b1b;
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+$cool-red: #F44336;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+h1.title {
+  font: $title-font;
+  color: $cool-red;
+}
+
+label:hover {
+  color: red;
+  position: relative;
+}

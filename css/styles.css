@@ -6,8 +6,12 @@ fieldset {
   margin-bottom: 30px;
   border: none; }
 
-h1 {
-  font-family: Roboto, verdana;
-  text-align: center; }
+h1.title {
+  font: normal 24px/1.5 "Open Sans", sans-serif;
+  color: #F44336; }
+
+label:hover {
+  color: red;
+  position: relative; }
 
 /*# sourceMappingURL=styles.css.map */
