@@ -2,6 +2,8 @@ $font-stack: verdana;
 $primary-color: #b61b1b;
 $title-font: normal 24px/1.5 'Open Sans', sans-serif;
 $cool-red: #F44336;
+$label-font: sans-serif;
+$color: #3018c7;
 
 body {
   font: 100% $font-stack;
@@ -18,7 +20,12 @@ h1.title {
   color: $cool-red;
 }
 
-label:hover {
+label {
   color: red;
   position: relative;
+  font: $label-font;
+}
+
+p {
+  color: blue($color);
 }

@@ -10,8 +10,12 @@ h1.title {
   font: normal 24px/1.5 "Open Sans", sans-serif;
   color: #F44336; }
 
-label:hover {
+label {
   color: red;
-  position: relative; }
+  position: relative;
+  font: sans-serif; }
+
+p {
+  color: 199; }
 
 /*# sourceMappingURL=styles.css.map */
