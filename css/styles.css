@@ -1,8 +1,33 @@
-body {
-  background: green; }
+fieldset {
+  margin-bottom: 30px;
+  font-family: Sans-serif; }
+  fieldset .legend {
+    font-size: 1.4em;
+    margin-bottom: 10px; }
 
-@media (min-width: 600px) and (max-width: 800px) {
-  body {
-    background: red; } }
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%; }
+
+label {
+  display: block;
+  margin: 8px; }
+  label label.light {
+    font-weight: 200;
+    display: inline; }
+
+.help {
+  font-family: Sans-serif;
+  font-size: 18px;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

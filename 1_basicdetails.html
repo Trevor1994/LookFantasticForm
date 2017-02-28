@@ -11,16 +11,26 @@
 
 <body>
     <header role="banner">
-      <img src="logo.png" alt="LookFantastic Logo" height="110" width="280">
-    </header><hr>  
-    <p><u>1</u>2 3</p>
+        <img src="logo.png" alt="LookFantastic Logo" height="110" width="280">
+    </header>
+    <hr>
+    <h5>Secure Checkout</h5>
+
+    <progress>
+
+    </progress>
+    <p>*Required Fields</p>
+    <legend><span class="number">1</span>Your Delivery Details</legend>
     <fieldset>
-        <legend><span class="number">1</span>Your Delivery Details</legend>
         <form action="form.html" method="post">
             <!-- Personal Details -->
-            <p>*Required Fields</p>
-            <label for="title">Title:</label>
-            <input type="text" id="title" aria-required="true">
+            <label for="title" accesskey="t">Title:</label>
+            <select name="title" id="title" aria-required="true">
+    	    <option>Mr
+    	    <option>Mrs
+          <option>Miss
+          <option>Ms
+          </select>
             <label for="firstname">Firstname:</label>
             <input type="text" id="first_name" aria-required="true">
             <label for="surname">Surname:</label>
@@ -53,14 +63,13 @@
         <label for="city">Town/City:</label>
         <input type="text" id="city" aria-required="true">
         <button aria-describedby="descriptionContinue">Continue</button>
-        <div id="descriptionContinue">Contiuing will direct the user to the next part
-          of the form which is the delivery details page.</div>
+    <!--<div id="descriptionContinue">Contiuing will direct the user to the next part of the form which is the delivery details page.</div> -->
     </fieldset>
     </form>
     <footer role="contentinfo">
-    <div class="help">
-      <a href="http://help.lookfantastic.com/index.php?">Need Help?</a>
-    </div>
+        <div class="help">
+            <a href="http://help.lookfantastic.com/index.php?">Need Help?</a>
+        </div>
     </footer>
 </body>
 

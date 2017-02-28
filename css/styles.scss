@@ -1,11 +1,44 @@
-// This applies from 600px onwards
-body {
-  background: green;
+$mainfont: Sans-serif;
+
+// Header
+
+//fieldset
+fieldset {
+  margin-bottom: 30px;
+  font-family: $mainfont;
+  .legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
 }
 
-// This applies from 0px to 800px
-@media (min-width: 600px) and (max-width: 800px) {
-  body {
-    background: red;
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+//Labels
+label {
+  display: block;
+  margin: 8px;
+  label.light {
+    font-weight:200;
+    display: inline;
   }
+}
+
+//Footer
+.help {
+  font-family: $mainfont;
+  font-size: 18px;
+  text-align: center;
 }
