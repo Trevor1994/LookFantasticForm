@@ -2,20 +2,25 @@
 <html lang="en">
 
 <head>
+    <title>Delivery Details</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Checkout Form/delivery details</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-    <header role="banner">
-        <h1>Look Fantastic</h1>
-    </header>
-    <p>1<u>2</u>3</p>
+  <header role="banner">
+      <img src="logo.png" alt="LookFantastic Logo" height="110" width="280">
+  </header>
+  <hr>
+  <h3>Secure Checkout</h3>
+  <progress>
+
+  </progress>
+  <font color="red"><h4>* Required Fields</h4></font>
     <fieldset>
-        <legend><span class="number">2</span>Delivery Options</legend>
+        <legend>Your Delivery Options</legend>
         <form action="form.html" method="post" id="delivery">
             <!-- Products that are being purchased -->
             <h4>Product 1</h4>
@@ -32,7 +37,7 @@
             <h5>Delivery Instructions</h5>
             <p>Let us know where we can leave your order if you are not in.</p>
             <textarea name="comment" form="delivery" cols="8" maxlength="50" placeholder="Max 50 characters..."></textarea>
-            <a href="3_deliverydetails.html"><button>Continue</button></a>
+            <button aria-describedby="descriptionContinue"><a href="../LookFantastic/3_bankingdetails.html" class="myButton">Continue</a>
     </fieldset>
     </form>
     <footer role="contentinfo">

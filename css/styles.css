@@ -5,18 +5,8 @@ fieldset {
     font-size: 1.4em;
     margin-bottom: 10px; }
 
-.number {
-  background-color: #5fcf80;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-radius: 100%; }
+h5 h3 h5 {
+  font-family: Sans-serif; }
 
 label {
   display: block;
@@ -24,6 +14,18 @@ label {
   label label.light {
     font-weight: 200;
     display: inline; }
+
+.myButton {
+  text-decoration: none;
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 15px;
+  line-height: 32px;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+  background-color: #FF8A3C; }
 
 .help {
   font-family: Sans-serif;

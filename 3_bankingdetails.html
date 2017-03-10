@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <title>Checkout Form/bankingdetails</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Checkout Form/bankingdetails</title>
 </head>
+
 <body>
-  <header role="banner"><h1>Look Fantastic</h1></header>
-  <p>1 2<u>3</u></p>
-  <fieldset>
-  <legend><span class="number">3</span>Your Banking Details</legend>
-  <form action="form.html" method="post">
-  <h4>Select Payment Method</h4>
-  <input type="radio" name="standard" value="">Visa<br>
-  <input type="radio" name="standard" value="">Visa Debit<br>
-  <input type="radio" name="standard" value="">Visa Electron<br>
-  <input type="radio" name="standard" value="">Mastercard<br>
-  <input type="radio" name="standard" value="">Switch/Maestro<br>
-  <input type="radio" name="standard" value="">American Express<br>
-  <input type="radio" name="standard" value="">Paypal<br>
-  <input type="radio" name="standard" value="">Adyen<br>
-  <input type="radio" name="standard" value="">Alipay<br>
+    <header role="banner">
+        <img src="logo.png" alt="LookFantastic Logo" height="110" width="280">
+    </header>
+    <progress>
 
-  <label for="title">Card Number *:</label>
-  <input type="text" id="card_number" name="card_number">
+  </progress>
+    <font color="red">
+        <h4>* Required Fields</h4>
+    </font>
+    <fieldset>
+        <legend>Your Banking Details</legend>
+        <form action="form.html" method="post" id="banking">
+            <h4>Select Payment Method</h4>
+            <input type="radio" name="standard" value="">Visa<br>
+            <input type="radio" name="standard" value="">Visa Debit<br>
+            <input type="radio" name="standard" value="">Visa Electron<br>
+            <input type="radio" name="standard" value="">Mastercard<br>
+            <input type="radio" name="standard" value="">Switch/Maestro<br>
+            <input type="radio" name="standard" value="">American Express<br>
+            <input type="radio" name="standard" value="">Paypal<br>
+            <input type="radio" name="standard" value="">Adyen<br>
+            <input type="radio" name="standard" value="">Alipay<br>
 
-  <label for="Month" accesskey="m">Month</label>
-  <select name="province" id="province">
+            <label for="title">Card Number *:</label>
+            <input type="text" id="card_number" name="card_number">
+
+            <label for="Month" accesskey="m">Month</label>
+            <select name="province" id="province">
 <option>01<option>02
 <option>03
 <option>04
@@ -42,8 +51,8 @@
 <option>12
 </select>
 
-<label for="Year" accesskey="y">Year</label>
-<select name="province" id="province">
+            <label for="Year" accesskey="y">Year</label>
+            <select name="province" id="province">
 <option>2017
 <option>2018
 <option>2019
@@ -58,14 +67,15 @@
 <option>2028
 </select>
 
-<label for="title">Security Number</label>
-<input type="text" id="security_no" name="security_no">
-<a href="#">What's this?</a>
-  </fieldset>
-  </form>
-  <a href="#"><button>Submit My Order</button></a>
-  <footer role="contentinfo">
+            <label for="title">Security Number</label>
+            <input type="text" id="security_no" name="security_no">
+            <a href="#">What's this?</a>
+    </fieldset>
+    </form>
+    <a href="#"><button>Submit My Order</button></a>
+    <footer role="contentinfo">
 
-  </footer>
+    </footer>
 </body>
+
 </html>

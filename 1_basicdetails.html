@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Checkout Form/basicdetails</title>
+    <title>Basic Details</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,15 @@
         <img src="logo.png" alt="LookFantastic Logo" height="110" width="280">
     </header>
     <hr>
-    <h5>Secure Checkout</h5>
+    <h3>Secure Checkout</h3>
 
     <progress>
 
     </progress>
-    <p>*Required Fields</p>
-    <legend><span class="number">1</span>Your Delivery Details</legend>
+    <font color="red">
+        <h4>* Required Fields</h4></font>
     <fieldset>
+        <legend>Your Details</legend>
         <form action="form.html" method="post">
             <!-- Personal Details -->
             <label for="title" accesskey="t">Title:</label>
@@ -62,8 +63,10 @@
         <input type="text" id="Address2" aria-required="false">
         <label for="city">Town/City:</label>
         <input type="text" id="city" aria-required="true">
-        <button aria-describedby="descriptionContinue">Continue</button>
-    <!--<div id="descriptionContinue">Contiuing will direct the user to the next part of the form which is the delivery details page.</div> -->
+        <!--<div id="descriptionContinue">Contiuing will direct the user to the next part of the form which is the delivery details page.</div> -->
+        <div style="text-align:center;">
+            <button aria-describedby="descriptionContinue"><a class="myButton" href="../LookFantastic/2_deliverydetails.html">Orange Button</a>
+    </div>
     </fieldset>
     </form>
     <footer role="contentinfo">
