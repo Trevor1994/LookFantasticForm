@@ -10,15 +10,27 @@
 </head>
 
 <body>
-  <header role="banner">
-      <img src="logo.png" alt="LookFantastic Logo" height="110" width="280">
-  </header>
-  <hr>
-  <h3>Secure Checkout</h3>
-  <progress>
+    <header role="banner">
+        <h2 class="title">LookFantastic</h2>
+    </header>
 
-  </progress>
-  <font color="red"><h4>* Required Fields</h4></font>
+    <ul class="pages">
+      <li>Basic Details</li> &ensp;
+      <li><b><u>Delivery Details</u></b></li> &ensp;
+      <li>Banking Details</li>
+    </ul>
+
+    <hr>
+
+    <ul class="contact-info">
+        <li class="phone"><a href="http://help.lookfantastic.com/index.php?">Need Help? 0161 8131481</li></a>
+    </ul>
+
+    <div class="thirdSection"/>
+      <h3 class="securetitle">Secure Checkout</h3>
+      <h4 class="requiredfields">* Required Fields</h4>
+    </div>
+
     <fieldset>
         <legend>Your Delivery Options</legend>
         <form action="form.html" method="post" id="delivery">
@@ -26,7 +38,7 @@
             <h4>Product 1</h4>
             <h4>Product 2</h4>
             <h4>Product 3</h4>
-            <br>
+            <hr>
             <!-- Different types of delivery options that are availible to users -->
             <input type="radio" name="standard" value="">Standard Delivery (UK up to 3 working days)<br>
             <h5>FREE</h5>
@@ -36,11 +48,12 @@
             <h5>£4.95</h5>
             <h5>Delivery Instructions</h5>
             <p>Let us know where we can leave your order if you are not in.</p>
-            <textarea name="comment" form="delivery" cols="8" maxlength="50" placeholder="Max 50 characters..."></textarea>
-            <button aria-describedby="descriptionContinue"><a href="../LookFantastic/3_bankingdetails.html" class="myButton">Continue</a>
+            <textarea name="comment" form="delivery" cols="0" maxlength="50" placeholder="Max 50 characters..."></textarea>
+            <a href="../LookFantastic/3_bankingdetails.html"><button class="myButton1" type="button">Continue</button>
     </fieldset>
     </form>
     <footer role="contentinfo">
+      <p class="policy"><a href="https://www.lookfantastic.com/info/privacy-policy.list">Private Policy</p></a>
     </footer>
 </body>
 
