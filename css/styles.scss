@@ -11,16 +11,45 @@ header {
     text-align: center;
     top: 10px;
     position: relative;
+    font-weight: bold;
   }
 }
 
 //selected pages
 .pages {
-  list-style-type: none;
-  font-family: $mainfont;
   li {
-    display: inline;
+    background-color: rgb(1, 1, 1);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 10px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+    padding: 5px;
+    margin-left: 8px;
+    font-family: $mainfont;
   }
+    .firstpage {
+      @extend li;
+      background-color: rgb(169, 169, 170);
+    }
+    .secondpage {
+      @extend li;
+      background-color: rgb(169, 169, 170);
+    }
+    .thirdpage {
+      @extend li;
+      background-color: rgb(169, 169, 170);
+    }
+    .finalpage {
+      @extend li;
+      background-color: rgb(169, 169, 170);
+    }
+
 }
 
 .contact-info {
@@ -42,8 +71,9 @@ header {
 .contact-info li.phone  a {
 	background-image: url('../phone.png');
   font-family: $mainfont;
-  color: rgb(11, 11, 11);
-  float: right;
+  position:relative;
+  color: rgb(0, 0, 0);
+  float:left;
 }
 
 .thirdSection {
@@ -52,30 +82,50 @@ header {
     .securetitle {
       font-family: $mainfont;
       position: absolute;
-      top: 110px;
-
+      top: 165px;
+      margin-top:30px;
     }
-
     // required fields
     .requiredfields {
       color: rgb(218, 7, 0);
       font-family: $mainfont;
-      padding-top: 40px;
+      padding-top: 60px;
     }
+}
+
+label:after {
+  content: "*";
+  color: rgb(218, 7, 0);
+}
+
+.number {
+  background-color: rgb(169, 169, 170);
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
 }
 
 //fieldset
 fieldset {
   margin-bottom: 30px;
   font-family: $mainfont;
-  border:none;
   position: relative;
+  border: 3px solid #28bdb3;
   text-align: left;
   legend {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-family: $mainfont;
     font-weight: bold;
     font-size: 20px;
+    float: left;
+    width: 100%;
   }
 }
 
@@ -88,11 +138,8 @@ fieldset {
 //Labels
 label {
   display: block;
-  margin: 8px;
-  label.light {
-    font-weight:200;
-    display: inline;
-  }
+  margin: 15px;
+  border-radius: 50%;
 }
 
 //Continue Button
@@ -107,30 +154,37 @@ label {
 	display:inline-block;
 	text-align:center;
 	background-color:#FF8A3C;
-  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-left:120px;
 }
 
 .myButton1 {
   @extend .myButton;
-  left:300px;
-  bottom: -20px;
-  position: absolute;
+  position: relative;
+  margin-bottom: 10px
 }
 
 .myButton2 {
   @extend .myButton;
-  position: absolute;
-  bottom: -30px;
-  left:300px;
+  position: relative;
+}
+
+.thankyou {
+  text-align: center;
+  font-family: $mainfont;
+  font-weight: bold;
 }
 
 //Footer
 footer {
   background-color: rgb(1, 1, 1);
   height: 50px;
+  margin-top: 10px;
     .policy {
       font-family: $mainfont;
       text-align: center;
+      left:120px;
+      position: absolute;
       a {
         color: #ffffff;
       }

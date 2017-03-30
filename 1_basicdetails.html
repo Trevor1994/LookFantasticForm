@@ -18,9 +18,10 @@
     </header>
 
     <ul class="pages">
-      <li><b><u>Basic Details</u></b></li> &ensp;
-      <li> Delivery Details</li> &ensp;
-      <li>Banking Details</li>
+      <li class="firstpage">1</li>&ensp;
+      <li>2</li>&ensp;
+      <li>3</li>&ensp;
+      <li>4</li>
     </ul>
 
     <hr>
@@ -31,11 +32,11 @@
 
     <div class="thirdSection"/>
       <h3 class="securetitle">Secure Checkout</h3>
-      <h4 class="requiredfields">* Required Fields</h4>
+      <h4 class="requiredfields"><span="asterisk">*</span>Required Fields</h4>
     </div>
 
     <fieldset>
-        <legend>Your Details</legend>
+      <legend><span class="number">1</span>Your basic info</legend>
         <form action="form.html" method="post">
       <!-- Personal Details -->
             <label for="title" accesskey="t">Title:</label>
@@ -56,7 +57,7 @@
             <label for="contact">Mobile Number:</label>
             <input type="tel" id="contactinfo" aria-required="true">
     </fieldset>
-    <hr>
+    
     <!-- Address Details -->
     <fieldset>
         <p class="addressHeading">Address</p>
@@ -80,9 +81,9 @@
         <input type="text" id="city" aria-required="true">
         <!--<div id="descriptionContinue">Contiuing will direct the user to the next part of the form which is the delivery details page.</div> -->
         <div style="text-align:center;">
-          <a href="../LookFantastic/2_deliverydetails.html"><button class="myButton" type="button">Continue</button>
-    </div>
+            </div>
     </fieldset>
+    <a href="../LookFantastic/2_deliverydetails.html"><button class="myButton" type="button">Continue</button>
     </form>
     <footer role="contentinfo">
       <p class="policy"><a href="https://www.lookfantastic.com/info/privacy-policy.list">Private Policy</p></a>

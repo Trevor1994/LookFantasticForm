@@ -7,13 +7,32 @@ header {
     font-family: Sans-serif;
     text-align: center;
     top: 10px;
-    position: relative; }
+    position: relative;
+    font-weight: bold; }
 
-.pages {
-  list-style-type: none;
+.pages li, .pages .firstpage, .pages .secondpage, .pages .thirdpage, .pages .finalpage {
+  background-color: #010101;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 10px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  padding: 5px;
+  margin-left: 8px;
   font-family: Sans-serif; }
-  .pages li {
-    display: inline; }
+.pages .firstpage {
+  background-color: #a9a9aa; }
+.pages .secondpage {
+  background-color: #a9a9aa; }
+.pages .thirdpage {
+  background-color: #a9a9aa; }
+.pages .finalpage {
+  background-color: #a9a9aa; }
 
 .contact-info {
   list-style: none;
@@ -29,34 +48,55 @@ header {
   padding: 0 0 0 30px;
   margin: 0 0 10px; }
 
-.contact-info li.phone a {
+.contact-info li.phone a, .contact-info .pages .phone.firstpage a, .pages .contact-info .phone.firstpage a, .contact-info .pages .phone.secondpage a, .pages .contact-info .phone.secondpage a, .contact-info .pages .phone.thirdpage a, .pages .contact-info .phone.thirdpage a, .contact-info .pages .phone.finalpage a, .pages .contact-info .phone.finalpage a {
   background-image: url("../phone.png");
   font-family: Sans-serif;
-  color: #0b0b0b;
-  float: right; }
+  position: relative;
+  color: black;
+  float: left; }
 
 .thirdSection {
   display: inline; }
   .thirdSection .securetitle {
     font-family: Sans-serif;
     position: absolute;
-    top: 110px; }
+    top: 165px;
+    margin-top: 30px; }
   .thirdSection .requiredfields {
     color: #da0700;
     font-family: Sans-serif;
-    padding-top: 40px; }
+    padding-top: 60px; }
+
+label:after {
+  content: "*";
+  color: #da0700; }
+
+.number {
+  background-color: #a9a9aa;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%; }
 
 fieldset {
   margin-bottom: 30px;
   font-family: Sans-serif;
-  border: none;
   position: relative;
+  border: 3px solid #28bdb3;
   text-align: left; }
   fieldset legend {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-family: Sans-serif;
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    float: left;
+    width: 100%; }
 
 .addressHeading {
   font-size: 20px;
@@ -65,10 +105,8 @@ fieldset {
 
 label {
   display: block;
-  margin: 8px; }
-  label label.light {
-    font-weight: 200;
-    display: inline; }
+  margin: 15px;
+  border-radius: 50%; }
 
 .myButton, .myButton1, .myButton2 {
   text-decoration: none;
@@ -81,24 +119,30 @@ label {
   display: inline-block;
   text-align: center;
   background-color: #FF8A3C;
-  margin-top: 40px; }
+  margin-bottom: 10px;
+  margin-left: 120px; }
 
 .myButton1 {
-  left: 300px;
-  bottom: -20px;
-  position: absolute; }
+  position: relative;
+  margin-bottom: 10px; }
 
 .myButton2 {
-  position: absolute;
-  bottom: -30px;
-  left: 300px; }
+  position: relative; }
+
+.thankyou {
+  text-align: center;
+  font-family: Sans-serif;
+  font-weight: bold; }
 
 footer {
   background-color: #010101;
-  height: 50px; }
+  height: 50px;
+  margin-top: 10px; }
   footer .policy {
     font-family: Sans-serif;
-    text-align: center; }
+    text-align: center;
+    left: 120px;
+    position: absolute; }
     footer .policy a {
       color: #ffffff; }
 
