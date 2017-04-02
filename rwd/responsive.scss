@@ -1,13 +1,248 @@
+//variables
+$mainfont: Sans-serif;
 /* Mobile first queries */
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  //selected pages
+  .pages {
+    li {
+      background-color: rgb(1, 1, 1);
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 20px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+      border-radius: 100%;
+      padding: 5px;
+      margin-left: 20px;
+      font-family: $mainfont;
+    }
+  }
+  //Continue Button
+  .myButton {
+    text-decoration:none;
+  	color: #ffffff;
+  	font-size:12px;
+  	font-weight:bold;
+  	padding:0 15px;
+  	line-height:32px;
+  	height: auto;
+  	display:inline-block;
+  	text-align:center;
+  	background-color:#FF8A3C;
+    margin-bottom: 10px;
+    margin-left:180px
+  }
 
+  .myButton1 {
+    @extend .myButton;
+    position: relative;
+    margin-bottom: 10px
+  }
+
+  .myButton2 {
+    @extend .myButton;
+    position: relative;
+  }
+  footer {
+    background-color: rgb(1, 1, 1);
+    height: 50px;
+    margin-top: 10px;
+      .policy {
+        font-family: $mainfont;
+        text-align: center;
+        left:180px;
+        position: absolute;
+        a {
+          color: #ffffff;
+        }
+      }
+  }
+}
 /* Larger than phablet */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+  //selected pages
+  .pages {
+    li {
+      background-color: rgb(1, 1, 1);
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 0.8em;
+      margin-right: 45px;
+      margin-left: 45px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+      border-radius: 100%;
+      padding: 5px;
+      font-family: $mainfont;
+    }
+  }
+  header {
+    .title {
+      font-family: $mainfont;
+      font-size: 28px;
+      text-align: center;
+      top: 10px;
+      position: relative;
+      font-weight: bold;
+    }
+  }
+  .thirdSection {
+    display: inline;
+      // checkout title
+      .securetitle {
+        font-family: $mainfont;
+        position: absolute;
+        top: 165px;
+        margin-top:30px;
+        font-size: 30px;
+      }
+      // required fields
+      .requiredfields {
+        color: rgb(218, 7, 0);
+        font-family: $mainfont;
+        font-size: 25px;
+        padding-top: 70px;
+      }
+  }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+  header {
+    height: 80px;
+    width:100%;
+    background-color: #28bdb3;
+    color: rgb(255, 255, 255);
+    .title {
+      font-family: $mainfont;
+      text-align: center;
+      top: 25px;
+      position: relative;
+      font-weight: bold;
+    }
+  }
+  /* Not displaying the elements below as they are aimed for mobile/tablet users */
+  .pages
+  {
+    display: none;
+  }
+
+  .number {
+    display: none;
+  }
+
+  .mybutton {
+    display: none;
+  }
+
+  .desktopPages {
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+      li {
+        display: inline-block;
+        font-family: $mainfont;
+        padding: 10px 100px;
+        color: #fff;
+        background-color: rgb(0, 0, 0);
+      }
+      .firstpage1 {
+        color: #fff;
+        font-weight: bold;
+        background-color: rgb(169, 169, 170);
+      }
+      .secondpage1 {
+        color: #fff;
+        font-weight: bold;
+        background-color: rgb(169, 169, 170);
+      }
+      .thirdpage1 {
+        color: #fff;
+        font-weight: bold;
+        background-color: rgb(169, 169, 170);
+      }
+      .finalpage1 {
+        color: #fff;
+        font-weight: bold;
+        background-color: rgb(169, 169, 170);
+      }
+  }
+
+  .contact-info a {
+  	display: block;
+  	min-height: 20px;
+  	background-repeat: no-repeat;
+  	background-size: 20px 20px;
+  	padding: 0 0 0 30px;
+  	margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .thirdSection {
+    display: inline;
+      // checkout title
+      .securetitle {
+        font-family: $mainfont;
+        position: absolute;
+        top: 180px;
+        margin-top:50px;
+        font-size: 25px;
+      }
+      // required fields
+      .requiredfields {
+        color: rgb(218, 7, 0);
+        font-family: $mainfont;
+        padding-top: 85px;
+        font-size: 20px;
+      }
+      //Labels
+      label {
+        display: block;
+        margin: 15px;
+        border-radius: 50%;
+      }
+  }
+  .desktopButton {
+    text-decoration:none;
+  	color: #ffffff;
+  	font-size:12px;
+  	font-weight:bold;
+  	padding:0 15px;
+  	line-height:32px;
+  	height: auto;
+  	display:inline-block;
+  	text-align:center;
+  	background-color:#FF8A3C;
+    margin-bottom: 10px;
+    margin-left:400px;
+  }
+
+  //Footer
+  footer {
+    background-color: rgb(1, 1, 1);
+    height: 50px;
+    margin-top: 20px;
+      .policy {
+        font-family: $mainfont;
+        text-align: center;
+        left:600px;
+        position: absolute;
+        a {
+          color: #ffffff;
+          font-size: 18px;
+        }
+      }
+  }
+
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}

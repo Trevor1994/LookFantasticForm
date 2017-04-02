@@ -10,6 +10,12 @@ header {
     position: relative;
     font-weight: bold; }
 
+.desktopPages {
+  display: none; }
+
+.desktopButton {
+  display: none; }
+
 .pages li, .pages .firstpage, .pages .secondpage, .pages .thirdpage, .pages .finalpage {
   background-color: #010101;
   color: #fff;

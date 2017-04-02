@@ -4,6 +4,7 @@
 <head>
     <title>Basic Details</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="rwd/responsive.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,6 +23,13 @@
       <li>2</li>&ensp;
       <li>3</li>&ensp;
       <li>4</li>
+    </ul>
+
+    <ul class="desktopPages">
+      <li class="firstpage1">Basic Details</li>
+      <li>Delivery Details</li>
+      <li>Banking Detils</li>
+      <li>Thank You</li>
     </ul>
 
     <hr>
@@ -45,6 +53,7 @@
     	    <option>Mrs
           <option>Miss
           <option>Ms
+          <option>Dr
           </select>
             <label for="firstname">Firstname:</label>
             <input type="text" id="first_name" aria-required="true">
@@ -57,7 +66,7 @@
             <label for="contact">Mobile Number:</label>
             <input type="tel" id="contactinfo" aria-required="true">
     </fieldset>
-    
+
     <!-- Address Details -->
     <fieldset>
         <p class="addressHeading">Address</p>
@@ -84,6 +93,9 @@
             </div>
     </fieldset>
     <a href="../LookFantastic/2_deliverydetails.html"><button class="myButton" type="button">Continue</button>
+    <!-- Button for desktop screens -->
+    <a href="../LookFantastic/2_deliverydetails.html"><button class="desktopButton" type="button">Continue</button>
+
     </form>
     <footer role="contentinfo">
       <p class="policy"><a href="https://www.lookfantastic.com/info/privacy-policy.list">Private Policy</p></a>
