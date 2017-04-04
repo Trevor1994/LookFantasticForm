@@ -25,7 +25,7 @@
     </ul>
 
     <ul class="desktopPages">
-      <li>>Basic Details</li>
+      <li>Basic Details</li>
       <li>Delivery Details</li>
       <li class="thirdpage1">Banking Details</li>
       <li>Thank You</li>
@@ -42,7 +42,7 @@
 
     <fieldset>
       <legend><span class="number">3</span>Your Banking Details</legend>
-        <form action="form.html" method="post" id="banking">
+        <form action="form.html" method="post" id="myform">
           <a href="http://www.merchantequip.com/information-center/credit-card-logos/" target="_blank"><img src="../LookFantastic/creditcards.png"
             alt="Merchant Equipment Store Credit Card Logos" /></a>
             <h4>Select Payment Method</h4>
@@ -56,9 +56,11 @@
             <input type="radio" name="standard" value="">Adyen<br>
             <input type="radio" name="standard" value="">Alipay<br>
 
-            <label for="title">Card Number:</label>
-            <input name="value" id="value">
+            <label for="number">CreditCard Number:</label>
+            <input type="text" name="number" id="number" onblur="validateNumber(number)" />
+            <span id="numberError" style="display: none;">You can only use alphabetic characters, hyphens and apostrophes</span>
 
+            <p><u>Expiry Date</u></p>
             <label for="Month" accesskey="m">Month</label>
             <select name="province" id="province">
                 <option>01
@@ -91,7 +93,7 @@
               <option>2028
               </select>
             <label for="title">Security Number</label>
-            <input type="text" id="security_no" name="security_no">
+            <input type="text" id="security" name="security"  onblur="validateSecurity(security)" />
             <a href="#">What's this?</a>
     </fieldset>
     </form>
@@ -100,13 +102,34 @@
         <p class="policy"><a href="https://www.lookfantastic.com/info/privacy-policy.list">Private Policy</p></a>
       </footer>
 <script>
-var value = document.getElementById("value");
-// takes the form field value and returns true on valid number
-function valid_credit_card(value) {
-  if (){
-
+// Validate credit card number
+  function validateNumber(number){
+    var re = /[^0-9-\s]+/
+      if(re.test(number)){
+        document.getElementById('number').style.background ='#ccffcc';
+        document.getElementById('numberError').style.display = "none";
+        return true;
+      }else{
+        document.getElementById('number').style.background ='#e35152';
+        return false;
+      }
   }
-}
+
+  // Validating security number
+  function validateSecurity(security){
+    var re = /[^0-3-\s]+/
+      if(re.test(security)){
+        document.getElementById('security').style.background ='#ccffcc';
+        document.getElementById('securityError').style.display = "none";
+        return true;
+      }else{
+        document.getElementById('security').style.background ='#e35152';
+        return false;
+      }
+  }
+
+
+
 </script>
 </body>
 

@@ -40,13 +40,11 @@ $mainfont: Sans-serif;
   }
 
   .myButton1 {
-    @extend .myButton;
     position: relative;
     margin-bottom: 10px
   }
 
   .myButton2 {
-    @extend .myButton;
     position: relative;
   }
   footer {
@@ -140,7 +138,7 @@ $mainfont: Sans-serif;
     display: none;
   }
 
-  .mybutton {
+  .myButton {
     display: none;
   }
 
@@ -210,20 +208,6 @@ $mainfont: Sans-serif;
         border-radius: 50%;
       }
   }
-  .desktopButton {
-    text-decoration:none;
-  	color: #ffffff;
-  	font-size:12px;
-  	font-weight:bold;
-  	padding:0 15px;
-  	line-height:32px;
-  	height: auto;
-  	display:inline-block;
-  	text-align:center;
-  	background-color:#FF8A3C;
-    margin-bottom: 10px;
-    margin-left:400px;
-  }
 
   //Footer
   footer {
@@ -233,7 +217,7 @@ $mainfont: Sans-serif;
       .policy {
         font-family: $mainfont;
         text-align: center;
-        left:600px;
+        left:700px;
         position: absolute;
         a {
           color: #ffffff;
